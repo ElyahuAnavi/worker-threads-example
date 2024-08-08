@@ -102,5 +102,3 @@ Contributions are welcome! If you have suggestions for improvements or new featu
 For any questions or inquiries, please contact [anavielyahu@gmail.com](mailto:anavielyahu@gmail.com).
 
 ---
-
-This version of the README is streamlined and provides clear instructions for users to get started quickly using `npm start`.
