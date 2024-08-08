@@ -1,0 +1,14 @@
+{
+  "name": "worker-nodejs",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "dependencies": {
+    "os": "^0.1.1",
+    "url": "^0.11.0",
+    "worker_threads": ">=10.5.0"
+  }
+}
