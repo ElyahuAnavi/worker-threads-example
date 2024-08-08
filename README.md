@@ -59,7 +59,7 @@ src/
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/worker-thread-performance.git
+   git clone https://github.com/ElyahuAnavi/worker-threads-example.git
    cd worker-thread-performance
    ```
 
