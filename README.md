@@ -17,7 +17,7 @@
 
 ## 📖 About the Project
 
-This project demonstrates the use of Node.js worker threads to perform computationally intensive tasks. It compares the performance of using worker threads versus a single-threaded approach, highlighting the benefits of parallel execution on multi-core systems.
+This project demonstrates the use of Node.js worker threads and child processes to perform computationally intensive tasks. It compares the performance of using worker threads, child processes, and a single-threaded approach, highlighting the benefits and trade-offs of parallel execution on multi-core systems.
 
 ## 🏗 Project Structure
 
@@ -26,26 +26,31 @@ src/
   ├── main.js
   ├── workerManager.js
   ├── worker.js
+  ├── childManager.js
+  ├── child.js
   ├── nonWorker.js
   └── task.js
 ```
 
-- **main.js**: The entry point that orchestrates both worker and non-worker executions.
+- **main.js**: The entry point that orchestrates worker threads, child processes, and non-worker executions.
 - **workerManager.js**: Manages the creation and lifecycle of worker threads.
 - **worker.js**: Contains the logic executed by each worker thread.
+- **childManager.js**: Manages the creation and lifecycle of child processes.
+- **child.js**: Contains the logic executed by each child process.
 - **nonWorker.js**: Runs tasks sequentially in the main thread for comparison.
 - **task.js**: Defines the computationally intensive task to be executed.
 
 ## 🛠 Key Features
 
-- **Parallel Execution:** Utilizes Node.js worker threads to execute tasks concurrently across multiple CPU cores.
-- **Performance Measurement:** Compares execution times between worker-based and single-threaded approaches.
+- **Parallel Execution:** Utilizes Node.js worker threads and child processes to execute tasks concurrently across multiple CPU cores.
+- **Performance Measurement:** Compares execution times between worker-based, child process-based, and single-threaded approaches.
 - **Modular Design:** Cleanly separates logic into distinct modules for maintainability and extensibility.
 
 ## 🖥 Technologies Used
 
 - **Node.js:** JavaScript runtime environment that executes server-side code.
 - **Worker Threads:** Node.js module that provides an API for utilizing multi-core systems by spawning worker threads.
+- **Child Processes:** Node.js module that allows running separate Node.js processes for parallel execution.
 - **Perf Hooks:** Used to measure the performance of synchronous and asynchronous code.
 
 ## 🚀 Getting Started
