@@ -1,3 +1,4 @@
+// workerManager.js
 import { Worker } from 'worker_threads';
 import path from 'path';
 import { performance } from 'perf_hooks';
